@@ -7,7 +7,8 @@ checks passed for translated previews, owner claim, OAuth approval, two-process
 Postgres publication, restart and physical expiry cleanup. The browser run used
 only loopback and isolated `myreach_test`; no hosted client or marketplace was
 contacted. The candidate is isolated on private branch `codex/mcp-publication-candidate`,
-excluding concurrent admin changes. Export provenance records the exact private
+including committed main updates while preserving parallel uncommitted work.
+Export provenance records the exact private
 source SHA and dirty state. The three MyReach export repositories are approved
 for public release after checks; the application backend remains private.
 
