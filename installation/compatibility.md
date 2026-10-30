@@ -15,7 +15,7 @@ the current application source is dirty and remain private.
 |---|---|---|
 | Official TypeScript SDK client 2.4.0 | Ten titled tools with annotations over HTTP; anonymous draft, browser preview/claim, OAuth PKCE consent, approved update, status | Hosted client review |
 | Legacy MCP 2025-11-25 | Ten-tool discovery/calls, auth errors and outputs | Host-specific UI validation |
-| Hermes 0.21.5+7355.ge36a818 | Isolated HERMES_HOME; HTTP connection and nine tools discovered (earlier candidate; ten-tool rerun pending) | Hermes OAuth and full publishing conversation |
+| Hermes 0.21.5+7355.ge36a818 | Isolated HERMES_HOME; HTTP connection and all ten tools discovered on 30 October | Hermes OAuth and full publishing conversation |
 | Codex CLI 0.153.4 | Configuration/package prepared | Interactive client connection and OAuth |
 | Claude Code | Configuration prepared | Interactive client connection and OAuth |
 | Cursor | Strict portable package prepared and schema-checked | Interactive client validation |
