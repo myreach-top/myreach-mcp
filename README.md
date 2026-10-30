@@ -66,7 +66,7 @@ For localization, enable `secondaryLanguages: ["fr"]`, then merge
 `translations: {"fr": {"title": "Documentation"}}`. English stays primary.
 Omitted fields are preserved; disabling a language retains its saved text.
 
-This private integration export is a development candidate. The production
+This integration export is a development candidate. The production
 endpoint may run an earlier tool set until the separately authorized release.
 
 Documentation: https://myreach.top/ai-agents/mcp

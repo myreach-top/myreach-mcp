@@ -6,9 +6,10 @@ provisioning, claim retry and revision probes passed on 30 October. SDK/browser
 checks passed for translated previews, owner claim, OAuth approval, two-process
 Postgres publication, restart and physical expiry cleanup. The browser run used
 only loopback and isolated `myreach_test`; no hosted client or marketplace was
-contacted. The shared checkout contains concurrent admin work; freeze a clean,
-reviewed source candidate before deployment. Integration exports record that
-the current application source is dirty and remain private.
+contacted. The candidate is isolated on private branch `codex/mcp-publication-candidate`,
+excluding concurrent admin changes. Export provenance records the exact private
+source SHA and dirty state. The three MyReach export repositories are approved
+for public release after checks; the application backend remains private.
 
 
 | Surface | Verified locally | Remaining |
