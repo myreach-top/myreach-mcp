@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "myreach": {
+      "type": "streamable-http",
+      "url": "https://myreach.top/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "mixed",
+            "client": {
+              "mode": "cimd"
+            },
+            "baseScopes": [
+              "pages:read",
+              "drafts:write",
+              "publication:request"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

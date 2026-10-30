@@ -1,0 +1,19 @@
+{
+  "source": "myreach-top/myreach-web",
+  "commit": "89961055b6eda73941a666c0e88e060f9e362cd6",
+  "dirty": true,
+  "visibility": "private",
+  "candidateOnly": true,
+  "files": {
+    "marketplace/plugin/plugin.json": "5506f63a426319950536f2a990aef95ffbe6803386ecb631f20a9217307028c1",
+    "marketplace/plugin/mcp.json": "b51b8192c583c3f9759ba4db42b4a8af4715e95fa51ac8701aabbe3f1ac436f4",
+    "marketplace/plugin/README.md": "a6c509aea354d088e0684f912871525c5c654968123cf401ffb0ba40400a9cfc",
+    "marketplace/plugin/LICENSE": "098c2cc2bbbb873839e79f38d1a43486e04a4a7cf5c5b0994f64e518d4c164d9",
+    "marketplace/plugin/assets/icon.png": "f8b070c9df8062b19ffbd3c39944243d8b152b6b5976750906f0bf832ca6adc0",
+    "marketplace/plugin/assets/icon-dark.png": "fdb73693d0889c640a2d7d854d83c723960d138a35a5c5b7f3037ce06db3f70e",
+    "marketplace/installation/clients.md": "fa73affc1baf6b5b22c575fda247b0227e425c08d9da8b7c15dcf5948f8f5387",
+    "marketplace/installation/compatibility.md": "784c093449f1a6203b0719fc6bf201feba8cc889888a7920eb4cf6299ef4c5f7",
+    "marketplace/registry/server.json": "5a834082e6ac68fe42f7cbc66e9da994a24b7259b584bd102a9b27ffef366f9f",
+    "marketplace/hermes/manifest.yaml": "6971b46400b42cdfb7b07c8c360878f874c4d9a896f27d63a2428690ff5052a2"
+  }
+}
