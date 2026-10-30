@@ -1,8 +1,15 @@
 # Compatibility evidence — 30 October 2026
 
-Latest local run: `npm run check`, `npm run build:server`, `npm run test:mcp`,
-`npm run package:mcp`, and
-`MYREACH_TEST_DATABASE_URL=postgres://myreach:myreach-local-only@127.0.0.1:54330/myreach_test BASE=http://127.0.0.1:8799 npm run test:mcp:browser` passed on 30 October 2026. The browser run used a temporary Node server and the isolated `myreach_test` database. It did not contact production or a marketplace.
+Latest ten-tool candidate: `npm run check` (source gate, four typechecks,
+configured lint, Python syntax and whitespace), build, protocol, website import,
+provisioning, claim retry and revision probes passed on 30 October. SDK/browser
+checks passed for translated previews, owner claim, OAuth approval, two-process
+Postgres publication, restart and physical expiry cleanup. The browser run used
+only loopback and isolated `myreach_test`; no hosted client or marketplace was
+contacted. The shared checkout contains concurrent admin work; freeze a clean,
+reviewed source candidate before deployment. Integration exports record that
+the current application source is dirty and remain private.
+
 
 | Surface | Verified locally | Remaining |
 |---|---|---|
