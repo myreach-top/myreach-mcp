@@ -19,7 +19,8 @@ their backends cannot connect to your loopback address.
    Keep that recovery nonce private and reuse it only for retries. Keep the
    returned draft capability private; it allows only temporary draft access.
 3. Edit with the latest revision. Ask for `get_page_preview`.
-4. Open the returned review link. Verify the intended owner and explicitly
+4. Open the returned review link. For a new owner, choose **Create account and
+   claim**, verify the emailed code (or Google), review the page and explicitly
    choose **Claim and publish**. Already published page updates use **Approve
    and publish**.
 5. Ask for `get_publication_status` to confirm the committed result.
@@ -68,12 +69,16 @@ Omitted fields are preserved; disabling a language retains its saved text.
 
 The live endpoint exposes ten titled tools as of 31 October 2026.
 See installation/compatibility.md in the connector repository for recorded
-validation. Real hosted-client workflows and client marketplace review remain pending.
+validation. Live email-code claim and builder revocation pass; Muse CIMD
+sign-in and discovery pass. Native hosted-client conversations and marketplace
+review remain separate.
 
 ## Directory availability
 
 - [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach): listed as `top.myreach/myreach`, version `1.0.0`.
 - [Hermes catalog submission](https://github.com/NousResearch/hermes-agent/pull/147158): awaiting review and merge. Direct remote setup is available now; see installation/clients.md.
+- [OpenClaw / ClawHub](https://clawhub.ai/myreach-top/plugins/myreach): listed; configuration-only bundle 1.0.0.
+- Muse: all three submission requirements completed; review pending, no public listing.
 - [Live MCP guide](https://myreach.top/ai-agents/mcp#directories): connection instructions and availability.
 
 A Registry listing does not imply approval by ChatGPT, Claude or another client.

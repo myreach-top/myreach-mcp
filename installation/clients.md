@@ -7,9 +7,21 @@ only when running the local test server.
 
 - [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach): listed as `top.myreach/myreach`, version `1.0.0`, verified 31 October 2026.
 - [Hermes catalog submission](https://github.com/NousResearch/hermes-agent/pull/147158): awaiting review and merge. Use direct setup below meanwhile.
+- [OpenClaw / ClawHub](https://clawhub.ai/myreach-top/plugins/myreach): listed, configuration-only bundle version 1.0.0.
+- Muse: intake and all three follow-up requirements submitted; CIMD OAuth sign-in and ten-tool discovery passed. Review pending; no public listing.
 - Other directory reviews remain separate. Registry publication does not imply approval by a client marketplace.
 
 Canonical [MCP guide and current availability](https://myreach.top/ai-agents/mcp#directories).
+
+## New owner versus existing page
+
+Build a new page anonymously with the intended owner's email. Open the returned
+claim link, choose **Create account and claim**, verify the email code (or
+Google), review the exact revision, then **Claim and publish**. A password or
+existing account is not required. Claiming does not grant ongoing assistant
+access. OAuth and explicit page selection are for maintaining an owned page.
+Some clients require account connection before exposing tools; their connection
+screen is separate from MyReach's anonymous creation/claim journey.
 
 ## Codex
 
@@ -70,8 +82,14 @@ remains separate; hosted-client review is still pending.
 ## OpenClaw
 
 The `openclaw/` folder in the public connector repository is a configuration-only
-compatible bundle for the hosted endpoint. ClawHub publication is pending;
-do not use an invented catalog installation command. Follow the official
+compatible bundle for the hosted endpoint. The [ClawHub listing](https://clawhub.ai/myreach-top/plugins/myreach)
+is live. Its verified catalog command is:
+
+```sh
+openclaw plugins install clawhub:@myreach-top/myreach
+```
+
+Enable the plugin and authorize only the MyReach pages needed. Follow the official
 [MCP setup](https://docs.openclaw.ai/tools/mcp) and
 [plugin bundle instructions](https://docs.openclaw.ai/plugins/bundles).
 OpenClaw OAuth and full publishing-workflow validation are pending.
@@ -97,7 +115,14 @@ which requires in-app testing. MyReach is not listed there.
 
 The [Muse Connector Platform](https://platform.muse.ai/docs) accepts connector
 submissions with reviewer access, business verification, tool permissions and
-data-handling documentation. MyReach is not submitted or validated in Muse.
+data-handling documentation. MyReach’s initial intake is submitted; the three
+follow-up requirements are now completed. The portal accepted Muse's CIMD,
+completed real OAuth sign-in and listed all ten tools on 31 October 2026.
+Three isolated Free reviewer accounts were supplied privately. Review and an
+actual Muse conversation remain pending; the portal snapshot is not a public listing.
+
+Grok, Claude and OpenAI/ChatGPT/Codex/Dot testing and submissions are deferred
+at the user's request. Their instructions above are prepared setup guidance.
 
 ## Test prompt
 

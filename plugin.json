@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Create and manage your web presence with AI.",
   "author": {
-    "name": "Kesha Labs",
+    "name": "MyReach",
     "url": "https://myreach.top"
   },
   "homepage": "https://myreach.top/ai-agents/mcp",
@@ -21,7 +21,7 @@
         "displayName": "MyReach",
         "shortDescription": "Build and manage web pages",
         "longDescription": "Prepare creator pages, business profiles, and public agent profiles. Inspect a public website for reviewable suggestions. Draft profile text, public avatar, link cards, social icons, up to two secondary languages and freestyle appearance, preview privately, and request verified owner publication approval. Targeted link edits preserve other cards and sections. Temporary pages stay private for 24 hours until claimed. MyReach hosts pages; it does not execute agents. Commerce and domain purchases are unsupported.",
-        "developerName": "Kesha Labs",
+        "developerName": "MyReach",
         "category": "Productivity",
         "capabilities": [
           "Prepare private pages",

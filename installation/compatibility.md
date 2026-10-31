@@ -11,6 +11,16 @@ expiry, the real preview renderer, no-store/noindex/no-referrer, public-route
 404s, and pending-claim status. The smoke page was never published. Read-only
 MCP discovery was repeated after the latest application deployment.
 
+A later explicitly authorized live test used a controlled AgentMail inbox:
+anonymous creation and private preview, public 404, **Create account and claim**,
+delivered email OTP, review of the exact revision, **Claim and publish**, public
+200, builder reads/writes denied and status-only receipt still available.
+The account was created through verified OTP on the Free plan. No password,
+admin override, OTP bypass or automatic OAuth grant was used for this claim.
+Muse then completed its own CIMD authorization and ten-tool listing against
+only that fictional test page. The private portal shows 3/3 requirements
+completed; review and an actual Muse conversation remain pending.
+
 Local browser/Postgres tests also cover verified owner claim, OAuth PKCE
 consent, approval of existing-page changes, revision conflicts, two-process
 publication/restart, and physical expiry cleanup. Those checks use loopback
@@ -19,9 +29,12 @@ or publication.
 
 | Surface | Evidence recorded | Still pending |
 |---|---|---|
-| Official TypeScript SDK client 2.4.0 | Local full workflow; live ten-tool discovery and private draft/preview/status smoke | Real host conversations and live owner approval |
+| Official TypeScript SDK client 2.4.0 | Local full workflow; live discovery, private draft/preview/status and email-OTP claim with builder revocation | Real host conversations and live approval of an existing-page draft |
 | Legacy MCP 2025-11-25 | Local ten-tool discovery/calls, auth errors and outputs | Host-specific UI validation |
 | Hermes 0.21.5+7355.ge36a818 | Isolated live HTTPS connection and ten-tool discovery on 31 October; actual catalog manifest parser passes | Browser OAuth and complete publishing conversation |
+| OpenClaw / ClawHub | Static compatible-bundle dry-run, security scan and public 1.0.0 listing verified | Native OpenClaw OAuth and full publication workflow |
+| Muse submission portal | Real CIMD authorization, owner login, explicit test-page consent, token exchange and ten-tool discovery passed; all three submission requirements completed | Marketplace approval and an actual Muse publishing conversation |
+| OpenAI dots | Plugin controls and shared OpenAI distribution route researched | Actual Dot installation and complete workflow |
 | Codex CLI 0.153.4 | Configuration/package prepared | Interactive live connection, OAuth and complete workflow |
 | Claude Code | Configuration prepared | Interactive live connection and OAuth |
 | Cursor | Portable package schema-checked | Interactive live workflow |
