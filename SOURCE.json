@@ -1,7 +1,7 @@
 {
   "source": "myreach-top/myreach-web",
   "sourceVisibility": "private",
-  "commit": "84b85b0e2b2ff67347a43cdf1e4e68d7662885d5",
+  "commit": "e4691ae224a058e9eaa66b2fd72bd27db021abbb",
   "dirty": false,
   "visibility": "public",
   "candidateOnly": true,
@@ -14,7 +14,7 @@
     "marketplace/plugin/assets/icon.png": "f8b070c9df8062b19ffbd3c39944243d8b152b6b5976750906f0bf832ca6adc0",
     "marketplace/plugin/assets/icon-dark.png": "fdb73693d0889c640a2d7d854d83c723960d138a35a5c5b7f3037ce06db3f70e",
     "marketplace/installation/clients.md": "daa153ba6cf77dd6b637886c905e202e2c270f556cbdda77482e06f502fb56d0",
-    "marketplace/installation/compatibility.md": "f71245d7670e994e0f8929862a3342dd466b7721612c00501e990474ca3a2248",
+    "marketplace/installation/compatibility.md": "2140378c24f772e13e78ea36a4abc737494d160cded37b431ea2aee4d43968c9",
     "marketplace/registry/server.json": "49f3c56e1281221d92af5e20b3d0b5ce1c38aedef6618f909404d331aa6e5ee5",
     "marketplace/hermes/manifest.yaml": "421a3ac08fba419f5cf8670e80dc0a7ce1770a61e4ca0b516abf34c7b76ca707",
     "docs/mcp/review-guide.md": "d1a6cd911eeb096123960f519f9b47b361e67e79804b958de228899ff6cabeb3",

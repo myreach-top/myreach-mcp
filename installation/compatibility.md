@@ -106,11 +106,15 @@ Local real-handler checks pass for new accounts, retained existing accounts,
 Free's one-page cap, Pro's three-page cap, and invalid/non-claim login denial.
 The browser test completes OTP, revision review, explicit publication and builder
 revocation without separate signup. Limit failures preserve the private draft.
-User-approved release `1775bd7` is deployed on Talia and the stopped Lovebirds
-fallback. Post-deploy role checks pass, including streaming standby and resumed
+User-approved MCP/claim baseline `1775bd7` is included on Talia and the stopped
+Lovebirds fallback. Post-deploy role checks pass, including streaming standby and resumed
 monitoring. Live health reports the exact release; served login assets contain
 the automatic flow, OAuth discovery is valid, and the SDK reads all three
 resources and all four prompts, including the updated claim instructions.
-Unauthenticated account access is denied. Claim and page-limit flows passed
+Unauthenticated account access is denied. A later share-card release `8f1cd9e`
+contains this MCP/claim code unchanged; both hosts, live claim assets and
+10-tool/3-resource/4-prompt discovery were rechecked on 31 October. Its
+[quality gates](https://github.com/myreach-top/myreach-web/actions/runs/41218144185) pass.
+Claim and page-limit flows passed
 local browser/handler checks and exact-release CI; the earlier live email-code
 claim evidence above used the prior account-choice screen.
