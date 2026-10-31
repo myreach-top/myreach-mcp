@@ -3,10 +3,10 @@
 ## Deployed release
 
 `https://myreach.top/mcp` is live on Talia and the stopped Lovebirds fallback.
-MCP implementation validation baseline: `3e3ae9fde675a24209153cbc960c31c69a44441b`.
+MCP implementation validation baseline: `1775bd7758fcd088ba08e9610f5e2cd4dc7b6e13`.
 Current app release is reported by `/api/health`; later docs-only rollouts can
 have a newer SHA than this recorded implementation test.
-[Exact-release GitHub quality gates](https://github.com/myreach-top/myreach-web/actions/runs/41205129748) pass.
+[Exact-release GitHub quality gates](https://github.com/myreach-top/myreach-web/actions/runs/41216869856) pass.
 Live SDK discovery confirms ten titled tools. The approved production smoke on
 31 October verified private draft creation/editing, retry-safe creation, fixed
 expiry, the real preview renderer, no-store/noindex/no-referrer, public-route
@@ -97,7 +97,7 @@ its exact source snapshot and dirty state; export updates and production
 rollouts are separate. Neither packaging nor this document pushes repositories,
 creates hosted reviewer data, hosts proofs, or submits listings.
 
-## Local claim follow-up (not deployed)
+## Claim follow-up — deployed 31 October 2026
 
 The claim screen now verifies the intended email directly and creates or links
 the account automatically; it no longer asks whether an account already exists.
@@ -106,5 +106,11 @@ Local real-handler checks pass for new accounts, retained existing accounts,
 Free's one-page cap, Pro's three-page cap, and invalid/non-claim login denial.
 The browser test completes OTP, revision review, explicit publication and builder
 revocation without separate signup. Limit failures preserve the private draft.
-This follow-up requires separate production deployment approval; the earlier
-live email-code claim evidence above used the prior account-choice screen.
+User-approved release `1775bd7` is deployed on Talia and the stopped Lovebirds
+fallback. Post-deploy role checks pass, including streaming standby and resumed
+monitoring. Live health reports the exact release; served login assets contain
+the automatic flow, OAuth discovery is valid, and the SDK reads all three
+resources and all four prompts, including the updated claim instructions.
+Unauthenticated account access is denied. Claim and page-limit flows passed
+local browser/handler checks and exact-release CI; the earlier live email-code
+claim evidence above used the prior account-choice screen.
