@@ -1,0 +1,12 @@
+{
+  "name": "myreach",
+  "version": "1.0.0",
+  "description": "Create private MyReach page drafts, preview changes and request owner approval.",
+  "author": {
+    "name": "MyReach",
+    "email": "hello@myreach.top"
+  },
+  "homepage": "https://myreach.top/ai-agents/mcp",
+  "repository": "https://github.com/myreach-top/myreach-mcp",
+  "license": "MIT"
+}

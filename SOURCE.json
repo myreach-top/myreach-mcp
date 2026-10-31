@@ -1,21 +1,24 @@
 {
   "source": "myreach-top/myreach-web",
   "sourceVisibility": "private",
-  "commit": "08e0d084ef520e35f96427b0d3033cb2be255dd0",
+  "commit": "ad3794c3730ac4d3bcb54edcb9faf282021a9211",
   "dirty": false,
   "visibility": "public",
   "candidateOnly": true,
-  "generatorSha256": "c3596412112a083364419918276e320d265dadfcf916917054658377ab5e95ca",
+  "generatorSha256": "d41d30fde3d47e57cbf285f73d4965f5483e27ab18ecc9bb06758eab529c7703",
   "files": {
     "marketplace/plugin/plugin.json": "5506f63a426319950536f2a990aef95ffbe6803386ecb631f20a9217307028c1",
     "marketplace/plugin/mcp.json": "b51b8192c583c3f9759ba4db42b4a8af4715e95fa51ac8701aabbe3f1ac436f4",
-    "marketplace/plugin/README.md": "7571c54c54b124d6980ddd5ceb200b22d2148a029f174354a98019873508419f",
+    "marketplace/plugin/README.md": "056d2e64fe32c27ba665343b56e6c42d9fa89769e0336d8b7eb1b9a97492ace6",
     "marketplace/plugin/LICENSE": "098c2cc2bbbb873839e79f38d1a43486e04a4a7cf5c5b0994f64e518d4c164d9",
     "marketplace/plugin/assets/icon.png": "f8b070c9df8062b19ffbd3c39944243d8b152b6b5976750906f0bf832ca6adc0",
     "marketplace/plugin/assets/icon-dark.png": "fdb73693d0889c640a2d7d854d83c723960d138a35a5c5b7f3037ce06db3f70e",
-    "marketplace/installation/clients.md": "fa73affc1baf6b5b22c575fda247b0227e425c08d9da8b7c15dcf5948f8f5387",
-    "marketplace/installation/compatibility.md": "ae800b610dd655ec14d790e735674ec54b011b9412e73aa6e52821e114bc8993",
+    "marketplace/installation/clients.md": "98e7e9d56026379676a57c96722a0a00cf8c9812d12dcaa01634cba92fc6781e",
+    "marketplace/installation/compatibility.md": "ebaeb36d3ebc8df3d8f9e004d0ab1bd06178f674e6d48115a5b7fda25156b122",
     "marketplace/registry/server.json": "5a834082e6ac68fe42f7cbc66e9da994a24b7259b584bd102a9b27ffef366f9f",
-    "marketplace/hermes/manifest.yaml": "6971b46400b42cdfb7b07c8c360878f874c4d9a896f27d63a2428690ff5052a2"
+    "marketplace/hermes/manifest.yaml": "789fd6696f06355ff27260d73d5351af8537a9a83c0b14bcd64cbbc582446d24",
+    "marketplace/openclaw/.claude-plugin/plugin.json": "b1ca62b6b7def098748fd74252a2689584c9df7fb60302952840bb9d89d608e1",
+    "marketplace/openclaw/.mcp.json": "b2ac56b96f04ba61b808d6ba57712fad5edcdd0584413f988f652fb0a3fab3c6",
+    "marketplace/openclaw/README.md": "09e3957695ecca0e7c592a0eef0023b9e533e086f45311aaa9824ff5725829a9"
   }
 }

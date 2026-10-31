@@ -1,4 +1,4 @@
-# Proposed catalog entry. Not approved or submitted.
+# MyReach hosted page publishing connector.
 manifest_version: 1
 name: myreach
 connector_slug: myreach

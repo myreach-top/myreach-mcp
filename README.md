@@ -66,8 +66,17 @@ For localization, enable `secondaryLanguages: ["fr"]`, then merge
 `translations: {"fr": {"title": "Documentation"}}`. English stays primary.
 Omitted fields are preserved; disabling a language retains its saved text.
 
-This integration export is a development candidate. The production
-endpoint may run an earlier tool set until the separately authorized release.
+The live endpoint exposes ten titled tools as of 31 October 2026.
+See installation/compatibility.md in the connector repository for recorded
+validation. Real hosted-client workflows and client marketplace review remain pending.
+
+## Directory availability
+
+- [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach): listed as `top.myreach/myreach`, version `1.0.0`.
+- [Hermes catalog submission](https://github.com/NousResearch/hermes-agent/pull/147158): awaiting review and merge. Direct remote setup is available now; see installation/clients.md.
+- [Live MCP guide](https://myreach.top/ai-agents/mcp#directories): connection instructions and availability.
+
+A Registry listing does not imply approval by ChatGPT, Claude or another client.
 
 Documentation: https://myreach.top/ai-agents/mcp
 Support: https://myreach.top/help
