@@ -7,7 +7,7 @@ only when running the local test server.
 
 - [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach): listed as `top.myreach/myreach`, version `1.0.0`, verified 31 October 2026.
 - [Hermes catalog submission](https://github.com/NousResearch/hermes-agent/pull/147158): awaiting review and merge. Use direct setup below meanwhile.
-- [OpenClaw / ClawHub](https://clawhub.ai/myreach-top/plugins/myreach): listed, configuration-only bundle version 1.0.0.
+- [OpenClaw / ClawHub](https://clawhub.ai/myreach-top/plugins/myreach): listed, configuration-only bundle version 1.0.1; metadata warning fixed.
 - Muse: intake and all three follow-up requirements submitted; CIMD OAuth sign-in and ten-tool discovery passed. Review pending; no public listing.
 - Other directory reviews remain separate. Registry publication does not imply approval by a client marketplace.
 
@@ -22,6 +22,18 @@ existing account is not required. Claiming does not grant ongoing assistant
 access. OAuth and explicit page selection are for maintaining an owned page.
 Some clients require account connection before exposing tools; their connection
 screen is separate from MyReach's anonymous creation/claim journey.
+
+## Public documentation and starter prompts
+
+The live server lists three public resources: the MCP guide, Agent API guide,
+and complete REST OpenAPI JSON. Read them through `resources/list` and
+`resources/read`; no account is required. Four optional prompts are available
+through `prompts/list` and `prompts/get`: `create_creator_page`,
+`create_business_page`, `create_agent_page`, and `update_page_safely`.
+Retrieving a prompt returns instructions; it makes no page changes and grants
+no access. A client's UI must support MCP resources/prompts to expose them.
+Live SDK retrieval of every resource and prompt passes. Muse's authenticated
+submission snapshot also shows 10 tools, 3 resources and 4 prompts.
 
 ## Codex
 
@@ -117,7 +129,8 @@ The [Muse Connector Platform](https://platform.muse.ai/docs) accepts connector
 submissions with reviewer access, business verification, tool permissions and
 data-handling documentation. MyReach’s initial intake is submitted; the three
 follow-up requirements are now completed. The portal accepted Muse's CIMD,
-completed real OAuth sign-in and listed all ten tools on 31 October 2026.
+completed real OAuth sign-in and lists ten tools, three documentation resources
+and four starter prompts as of 31 October 2026.
 Three isolated Free reviewer accounts were supplied privately. Review and an
 actual Muse conversation remain pending; the portal snapshot is not a public listing.
 

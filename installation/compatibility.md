@@ -3,8 +3,10 @@
 ## Deployed release
 
 `https://myreach.top/mcp` is live on Talia and the stopped Lovebirds fallback.
-Current application release: `88aee6af0ac48bf9271a940cfe9e2d435e54bf0c`.
-[Exact-release GitHub quality gates](https://github.com/myreach-top/myreach-web/actions/runs/41186830974) pass.
+MCP implementation validation baseline: `3e3ae9fde675a24209153cbc960c31c69a44441b`.
+Current app release is reported by `/api/health`; later docs-only rollouts can
+have a newer SHA than this recorded implementation test.
+[Exact-release GitHub quality gates](https://github.com/myreach-top/myreach-web/actions/runs/41205129748) pass.
 Live SDK discovery confirms ten titled tools. The approved production smoke on
 31 October verified private draft creation/editing, retry-safe creation, fixed
 expiry, the real preview renderer, no-store/noindex/no-referrer, public-route
@@ -32,8 +34,8 @@ or publication.
 | Official TypeScript SDK client 2.4.0 | Local full workflow; live discovery, private draft/preview/status and email-OTP claim with builder revocation | Real host conversations and live approval of an existing-page draft |
 | Legacy MCP 2025-11-25 | Local ten-tool discovery/calls, auth errors and outputs | Host-specific UI validation |
 | Hermes 0.21.5+7355.ge36a818 | Isolated live HTTPS connection and ten-tool discovery on 31 October; actual catalog manifest parser passes | Browser OAuth and complete publishing conversation |
-| OpenClaw / ClawHub | Static compatible-bundle dry-run, security scan and public 1.0.0 listing verified | Native OpenClaw OAuth and full publication workflow |
-| Muse submission portal | Real CIMD authorization, owner login, explicit test-page consent, token exchange and ten-tool discovery passed; all three submission requirements completed | Marketplace approval and an actual Muse publishing conversation |
+| OpenClaw / ClawHub | Static compatible-bundle dry-run, security scan and public 1.0.1 listing verified; metadata warning fixed, zero inspector issues | Native OpenClaw OAuth and full publication workflow |
+| Muse submission portal | Real CIMD authorization, owner login, explicit test-page consent, token exchange and 10-tool/3-resource/4-prompt discovery passed; all three submission requirements completed | Marketplace approval and an actual Muse publishing conversation |
 | OpenAI dots | Plugin controls and shared OpenAI distribution route researched | Actual Dot installation and complete workflow |
 | Codex CLI 0.153.4 | Configuration/package prepared | Interactive live connection, OAuth and complete workflow |
 | Claude Code | Configuration prepared | Interactive live connection and OAuth |
@@ -54,13 +56,12 @@ The [Hermes catalog submission](https://github.com/NousResearch/hermes-agent/pul
 awaits Nous review and merge. These results do not claim client marketplace
 approval or replace ChatGPT/Claude/Cursor/Codex/Hermes conversations.
 
-## Documentation and prompt candidate
+## Live documentation and prompts
 
-The subsequent local candidate exposes three public resources and four starter
-prompts. Focused Node/Pages protocol tests cover actual document content,
+The live endpoint exposes three public resources and four starter prompts. Focused Node/Pages protocol tests cover actual document content,
 bounded reads, no credential forwarding, unknown/private resource rejection,
-validated prompt arguments and no page/account/grant mutations. This is local
-evidence until the candidate is deployed and Muse's listing is refreshed.
+validated prompt arguments and no page/account/grant mutations. The same candidate passed live SDK reads of every resource and prompt. Muse's
+refreshed authenticated listing confirms 10 tools, 3 resources and 4 prompts.
 
 ## Repository and release status
 
