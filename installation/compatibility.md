@@ -50,7 +50,7 @@ currently installed or latest versions.
 The local browser probe verifies mobile-first defaults, lone row/card centering
 across five desktop layouts, explicit wide-desktop preservation and mobile
 owner approval. The [Official MCP Registry listing](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach)
-is active at version 1.0.0. Public metadata readback and a fresh live SDK
+is active at version 1.0.1. Public metadata readback and a fresh live SDK
 connection, ten titled tools and capabilities call passed on 31 October 2026.
 The [Hermes catalog submission](https://github.com/NousResearch/hermes-agent/pull/147158)
 awaits Nous review and merge. These results do not claim client marketplace
@@ -96,3 +96,15 @@ integration/API/docs repositories are public. Each export's SOURCE.json records
 its exact source snapshot and dirty state; export updates and production
 rollouts are separate. Neither packaging nor this document pushes repositories,
 creates hosted reviewer data, hosts proofs, or submits listings.
+
+## Local claim follow-up (not deployed)
+
+The claim screen now verifies the intended email directly and creates or links
+the account automatically; it no longer asks whether an account already exists.
+A legacy existing-account return path also admits a new verified intended owner.
+Local real-handler checks pass for new accounts, retained existing accounts,
+Free's one-page cap, Pro's three-page cap, and invalid/non-claim login denial.
+The browser test completes OTP, revision review, explicit publication and builder
+revocation without separate signup. Limit failures preserve the private draft.
+This follow-up requires separate production deployment approval; the earlier
+live email-code claim evidence above used the prior account-choice screen.

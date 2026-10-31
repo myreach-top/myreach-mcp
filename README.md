@@ -24,8 +24,9 @@ needs its own authorization and compatibility result. Demo pages are view-only.
    Keep that recovery nonce private and reuse it only for retries. Keep the
    returned draft capability private; it allows only temporary draft access.
 3. Edit with the latest revision. Ask for `get_page_preview`.
-4. Open the returned review link. For a new owner, choose **Create account and
-   claim**, verify the emailed code (or Google), review the page and explicitly
+4. Open the returned review link. Verify the emailed code (or Google); MyReach
+   creates an account if needed or retains the existing one. If account choices
+   appear, choose **Create account and claim**. Review the page and explicitly
    choose **Claim and publish**. Already published page updates use **Approve
    and publish**.
 5. Ask for `get_publication_status` to confirm the committed result.
@@ -90,7 +91,7 @@ They return reference content or instructions; they never publish or grant
 access. Live retrieval passes, and Muse's submission snapshot confirms three
 resources and four prompts. Native-client conversations remain separate.
 
-- [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach): listed as `top.myreach/myreach`, version `1.0.0`.
+- [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach): listed as `top.myreach/myreach`, version `1.0.1`.
 - [Hermes catalog submission](https://github.com/NousResearch/hermes-agent/pull/147158): awaiting review and merge. Direct remote setup is available now; see installation/clients.md.
 - [OpenClaw / ClawHub](https://clawhub.ai/myreach-top/plugins/myreach): listed; configuration-only bundle 1.0.1; metadata warning fixed.
 - Muse: all three submission requirements completed; review pending, no public listing.

@@ -2,12 +2,97 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "top.myreach/myreach",
   "title": "MyReach",
-  "description": "Inspect websites; draft profiles, links, design and languages; preview and request owner approval.",
-  "version": "1.0.0",
+  "description": "Create private creator, business and agent pages. Use guides, prompts, previews and owner approval.",
+  "version": "1.0.1",
   "remotes": [
     {
       "type": "streamable-http",
       "url": "https://myreach.top/mcp"
     }
-  ]
+  ],
+  "websiteUrl": "https://myreach.top/ai-agents/mcp",
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "documentation": {
+        "mcp": "https://myreach.top/ai-agents/mcp",
+        "api": "https://myreach.top/ai-agents",
+        "agentGuide": "https://myreach.top/ai-agents-guide",
+        "clientReview": "https://github.com/myreach-top/myreach-mcp/blob/main/review-guide.md",
+        "compatibility": "https://github.com/myreach-top/myreach-mcp/blob/main/installation/compatibility.md"
+      },
+      "integrationRepository": "https://github.com/myreach-top/myreach-mcp",
+      "backendSource": "private; integration repository contains connector metadata and documentation only",
+      "catalog": {
+        "tools": 10,
+        "resources": [
+          "https://myreach.top/ai-agents/mcp",
+          "https://myreach.top/ai-agents-guide",
+          "https://myreach.top/openapi.json"
+        ],
+        "prompts": [
+          {
+            "name": "create_creator_page",
+            "exampleArguments": {
+              "name": "My creator example",
+              "description": "Independent illustrator sharing work and updates.",
+              "links": "Portfolio: https://example.com/portfolio"
+            }
+          },
+          {
+            "name": "create_business_page",
+            "exampleArguments": {
+              "name": "My business example",
+              "description": "A truthful business description.",
+              "links": "Website: https://example.com"
+            }
+          },
+          {
+            "name": "create_agent_page",
+            "exampleArguments": {
+              "name": "My agent example",
+              "description": "An agent profile, not an agent runtime or verification.",
+              "links": "Documentation: https://example.com/docs"
+            }
+          },
+          {
+            "name": "update_page_safely",
+            "exampleArguments": {
+              "slug": "my-owned-example",
+              "changes": "Shorten my bio and preserve other content."
+            }
+          }
+        ]
+      },
+      "pageExamples": {
+        "viewOnly": true,
+        "fictional": true,
+        "creator": "https://myreach.top/youruser",
+        "business": "https://myreach.top/yourbusiness",
+        "agentProfile": "https://myreach.top/youragent"
+      },
+      "authentication": {
+        "anonymous": "Temporary private drafts; intended owner verifies email and explicitly claims and publishes. No account or OAuth needed to build.",
+        "oauth": {
+          "flow": "authorization_code",
+          "pkce": "S256",
+          "clientRegistration": [
+            "CIMD",
+            "DCR"
+          ],
+          "publicClient": true,
+          "resource": "https://myreach.top/mcp",
+          "protectedResourceMetadata": "https://myreach.top/.well-known/oauth-protected-resource/mcp",
+          "authorizationServerMetadata": "https://myreach.top/.well-known/oauth-authorization-server",
+          "scopes": [
+            "pages:read",
+            "drafts:write",
+            "publication:request"
+          ],
+          "pageConsent": "Only pages explicitly selected by the owner"
+        }
+      },
+      "publication": "Existing-page edits stay private until exact-revision browser approval. Prompt retrieval and discovery do not grant access or publish.",
+      "metadataRevision": "1.0.1; remote endpoint remains unchanged; runtime catalog is discovered over MCP"
+    }
+  }
 }

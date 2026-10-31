@@ -31,7 +31,7 @@ Ask for my owner email if needed. Show the preview and request my approval.”
 
 ## Distribution and testing
 
-- [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach): listed, version 1.0.0.
+- [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach): listed, version 1.0.1.
 - [Hermes catalog submission](https://github.com/NousResearch/hermes-agent/pull/147158): awaiting review.
 - ClawHub availability: see the [current directory status](https://myreach.top/ai-agents/mcp#directories).
 - Live SDK discovery/capabilities pass. OpenClaw OAuth and the complete

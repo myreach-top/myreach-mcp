@@ -5,7 +5,7 @@ only when running the local test server.
 
 ## Directory status
 
-- [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach): listed as `top.myreach/myreach`, version `1.0.0`, verified 31 October 2026.
+- [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach): listed as `top.myreach/myreach`, version `1.0.1`, verified 31 October 2026.
 - [Hermes catalog submission](https://github.com/NousResearch/hermes-agent/pull/147158): awaiting review and merge. Use direct setup below meanwhile.
 - [OpenClaw / ClawHub](https://clawhub.ai/myreach-top/plugins/myreach): listed, configuration-only bundle version 1.0.1; metadata warning fixed.
 - Muse: intake and all three follow-up requirements submitted; CIMD OAuth sign-in and ten-tool discovery passed. Review pending; no public listing.
@@ -16,8 +16,11 @@ Canonical [MCP guide and current availability](https://myreach.top/ai-agents/mcp
 ## New owner versus existing page
 
 Build a new page anonymously with the intended owner's email. Open the returned
-claim link, choose **Create account and claim**, verify the email code (or
-Google), review the exact revision, then **Claim and publish**. A password or
+claim link, verify the email code (or Google), review the exact revision, then
+**Claim and publish**. Verification creates or links the account automatically.
+If an older screen offers account choices, choose **Create account and claim**.
+Free allows one page; active Pro allows three. A full account gets a clear limit
+error and its draft stays private. A password or
 existing account is not required. Claiming does not grant ongoing assistant
 access. OAuth and explicit page selection are for maintaining an owned page.
 Some clients require account connection before exposing tools; their connection

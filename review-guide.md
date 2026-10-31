@@ -104,9 +104,12 @@ publish, authorize an account, or consume a page-creation quota.
 2. Keep its draft capability private. Read or edit only that draft, using
    the latest revision. Obtain `get_page_preview` and
    `request_publication_approval`. The public page must still return 404.
-3. The owner opens the claim link, chooses **Create account and claim** or
-   links an existing account, and verifies the intended email by code or
-   Google. No existing account, password or OAuth connection is required
+3. The owner opens the claim link and verifies the intended email by code or
+   Google. Verification creates an account if needed or retains the existing
+   account. If an older screen offers account choices, choose **Create account
+   and claim**; no separate signup is needed. Free allows one page; active Pro
+   allows three. A full account cannot claim another page; the draft stays private.
+   No existing account, password or OAuth connection is required
    for anonymous creation. A host may separately require connection before
    exposing its tools.
 4. The owner reviews the exact revision and chooses **Claim and publish**.
@@ -163,3 +166,8 @@ Hermes-specific results and the login-probe limitation are recorded in the
 Public examples and this guide need no private reviewer login. If a marketplace
 needs hosted reviewer access, arrange isolated credentials privately for that
 recipient; never reuse customer accounts or publish the credentials.
+
+Registry metadata revision [1.0.1](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach)
+includes these documentation, prompt, OAuth and fictional example links.
+Publisher extensions may not appear in every directory UI; the actual catalog
+is discovered from `/mcp`. Credentials and private review links are excluded.
