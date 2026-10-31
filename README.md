@@ -75,6 +75,12 @@ review remain separate.
 
 ## Directory availability
 
+The next server candidate adds public MCP/API/OpenAPI documentation resources
+and four optional starter prompts: `create_creator_page`,
+`create_business_page`, `create_agent_page`, and `update_page_safely`.
+They return reference content or instructions; they never publish or grant
+access. Deployment and client visibility checks remain pending.
+
 - [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=top.myreach%2Fmyreach): listed as `top.myreach/myreach`, version `1.0.0`.
 - [Hermes catalog submission](https://github.com/NousResearch/hermes-agent/pull/147158): awaiting review and merge. Direct remote setup is available now; see installation/clients.md.
 - [OpenClaw / ClawHub](https://clawhub.ai/myreach-top/plugins/myreach): listed; configuration-only bundle 1.0.0.

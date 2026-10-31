@@ -54,6 +54,14 @@ The [Hermes catalog submission](https://github.com/NousResearch/hermes-agent/pul
 awaits Nous review and merge. These results do not claim client marketplace
 approval or replace ChatGPT/Claude/Cursor/Codex/Hermes conversations.
 
+## Documentation and prompt candidate
+
+The subsequent local candidate exposes three public resources and four starter
+prompts. Focused Node/Pages protocol tests cover actual document content,
+bounded reads, no credential forwarding, unknown/private resource rejection,
+validated prompt arguments and no page/account/grant mutations. This is local
+evidence until the candidate is deployed and Muse's listing is refreshed.
+
 ## Repository and release status
 
 The application/backend repository remains private. The three reviewed MyReach

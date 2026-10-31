@@ -1,0 +1,11 @@
+{
+  "name": "@myreach-top/myreach",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "MyReach remote MCP connector bundle for private drafts, previews and owner approval.",
+  "license": "MIT",
+  "author": { "name": "MyReach", "url": "https://myreach.top" },
+  "homepage": "https://myreach.top/ai-agents/mcp",
+  "repository": { "type": "git", "url": "https://github.com/myreach-top/myreach-mcp.git", "directory": "openclaw" },
+  "files": [".claude-plugin/plugin.json", ".mcp.json", "README.md", "LICENSE", "assets/icon.png"]
+}
