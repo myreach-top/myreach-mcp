@@ -13,6 +13,11 @@ their backends cannot connect to your loopback address.
 
 ## Workflow
 
+See the [shared client review guide](https://github.com/myreach-top/myreach-mcp/blob/main/review-guide.md)
+for fictional creator/business/agent examples, copyable requests, prompt
+arguments and OAuth/claim checks. These recipes are client-neutral; each client
+needs its own authorization and compatibility result. Demo pages are view-only.
+
 1. Ask the assistant to prepare your page. Supply the intended owner's email
    only when you want to create a new page before signup.
 2. The assistant calls `create_page_draft` with a fresh random UUIDv4 or 32–64 hex requestId.
@@ -72,6 +77,9 @@ See installation/compatibility.md in the connector repository for recorded
 validation. Live email-code claim and builder revocation pass; Muse CIMD
 sign-in and discovery pass. Native hosted-client conversations and marketplace
 review remain separate.
+Hermes public discovery works; its tested login probe does not obtain a token
+from public discovery alone. See installation/compatibility.md before testing
+owned-page access. MyReach requires no OAuth client secret.
 
 ## Directory availability
 

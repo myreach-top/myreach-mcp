@@ -35,6 +35,12 @@ no access. A client's UI must support MCP resources/prompts to expose them.
 Live SDK retrieval of every resource and prompt passes. Muse's authenticated
 submission snapshot also shows 10 tools, 3 resources and 4 prompts.
 
+Use the [shared client review guide](https://github.com/myreach-top/myreach-mcp/blob/main/review-guide.md)
+for view-only creator/business/agent pages, requests usable without a prompt
+picker, exact resource URIs, prompt arguments, anonymous claim and OAuth
+approval checks. Each client needs its own authorization; these examples do
+not share Muse reviewer credentials or tokens with other clients.
+
 ## Codex
 
 In an isolated test configuration, add a remote server:
@@ -62,8 +68,22 @@ For owner account access, add `auth: oauth`, then run `hermes mcp login myreach`
 from a fresh terminal. Browser sign-in and explicit page selection follow.
 `hermes mcp test myreach` checks discovery; it does not prove owner OAuth or
 publication. See the [official Hermes instructions](https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp/).
-The catalog PR above contains the submitted curated entry; full Hermes browser
-OAuth and publishing-conversation validation remain pending.
+The catalog PR above contains the submitted curated entry. MyReach's discovery
+is public: the tested Hermes login probe lists tools without obtaining a token
+and reports “no OAuth token was obtained”. That is not authenticated account
+access. MyReach supports public-client DCR/PKCE and requires no client secret;
+do not add a fake secret or an owner REST key to work around this result.
+Full native Hermes OAuth and publishing-conversation validation remain pending.
+
+For anonymous creation and public documentation/prompts, omit `auth: oauth`.
+With the server key `myreach`, Hermes exposes the utilities
+`mcp__myreach__list_resources`, `mcp__myreach__read_resource`,
+`mcp__myreach__list_prompts` and `mcp__myreach__get_prompt` when discovery advertises
+those capabilities. Ask it to read the MCP guide, or retrieve
+`create_creator_page`, `create_business_page`, `create_agent_page` or
+`update_page_safely` with the arguments in the shared guide. Leave resource and
+prompt utilities enabled. Restart or use `/reload-mcp` after a server catalog
+update; native utilities do not add server-side tools to MyReach's count of ten.
 
 ## Claude Code
 

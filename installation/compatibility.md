@@ -33,7 +33,7 @@ or publication.
 |---|---|---|
 | Official TypeScript SDK client 2.4.0 | Local full workflow; live discovery, private draft/preview/status and email-OTP claim with builder revocation | Real host conversations and live approval of an existing-page draft |
 | Legacy MCP 2025-11-25 | Local ten-tool discovery/calls, auth errors and outputs | Host-specific UI validation |
-| Hermes 0.21.5+7355.ge36a818 | Isolated live HTTPS connection and ten-tool discovery on 31 October; actual catalog manifest parser passes | Browser OAuth and complete publishing conversation |
+| Hermes 0.21.5+7355.ge36a818 | Actual manifest parser passes; live discovery returns ten tools plus four Hermes utilities; all three resource reads and four prompt retrievals pass | Browser OAuth and complete publishing conversation; login probe stops after public discovery without obtaining a token |
 | OpenClaw / ClawHub | Static compatible-bundle dry-run, security scan and public 1.0.1 listing verified; metadata warning fixed, zero inspector issues | Native OpenClaw OAuth and full publication workflow |
 | Muse submission portal | Real CIMD authorization, owner login, explicit test-page consent, token exchange and 10-tool/3-resource/4-prompt discovery passed; all three submission requirements completed | Marketplace approval and an actual Muse publishing conversation |
 | OpenAI dots | Plugin controls and shared OpenAI distribution route researched | Actual Dot installation and complete workflow |
@@ -62,6 +62,32 @@ The live endpoint exposes three public resources and four starter prompts. Focus
 bounded reads, no credential forwarding, unknown/private resource rejection,
 validated prompt arguments and no page/account/grant mutations. The same candidate passed live SDK reads of every resource and prompt. Muse's
 refreshed authenticated listing confirms 10 tools, 3 resources and 4 prompts.
+
+## Hermes review refresh
+
+The existing [catalog PR](https://github.com/NousResearch/hermes-agent/pull/147158)
+includes the same view-only creator/business/agent examples and
+[client-neutral review guide](https://github.com/myreach-top/myreach-mcp/blob/main/review-guide.md)
+used for the other submission materials. The guide documents the actual
+three-resource/four-prompt catalog, anonymous email-code claim, and a separate
+selected-page OAuth maintenance flow. It includes no hosted reviewer passwords,
+tokens, customer data or private capabilities.
+
+At 15:17 UTC on 31 October, native Hermes discovery and its registered utility
+handlers read all three live documentation resources and retrieved every starter
+prompt, including the required arguments for `update_page_safely`. Hermes
+registered 14 callable entries: ten MyReach server tools and four generated
+resource/prompt utilities. No page was created or changed. An unauthenticated
+`get_connected_account` call was denied, as required.
+
+An isolated native `hermes mcp login` test on 31 October exposed a limitation:
+MyReach's discovery is public, so the probe lists tools without starting the
+authorization flow and reports that no OAuth token was obtained. The profile
+has no authenticated account access. This is not evidence of missing DCR or
+a requirement for a client secret. MyReach's public-client DCR/PKCE is covered
+by separate protocol/browser checks; Muse's actual CIMD flow passed. A full
+native Hermes OAuth and publishing conversation remains pending. Do not copy
+Muse's token into Hermes or add an owner REST key as a workaround.
 
 ## Repository and release status
 
